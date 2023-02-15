@@ -1,4 +1,29 @@
+import { useRef } from "react";
+import emailjs from "emailjs-com";
+
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_f7mxomb",
+        "contact_form",
+        form.current,
+        "CqdMPnR641yxueMAp"
+      )
+      .then(
+        (result) => {
+          alert("Correo enviado correctamente");
+        },
+        (error) => {
+          alert(`Ocurrio un error, intente nuevamente - ${error}`);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <>
       <div className="bg-no-repeat min-h-screen bg-cover backgroundImage">
@@ -72,48 +97,48 @@ const Contact = () => {
             <p className="text-xl font-semibold text-strong-pink pb-4">
               Send me a message
             </p>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="pb-4">
-                <label
-                  className="block text-gray-700 text-base font-semibold pb-2"
-                >
+                <label className="block text-gray-700 text-base font-semibold pb-2">
                   Name
                 </label>
                 <input
                   className="shadow border text-base border-gray-600 w-full py-2 px-3 text-gray-700  focus:outline-none focus:shadow-outline"
-                  id="name"
                   type="text"
+                  name="user_name"
+                  required
                   placeholder="Write your name"
                 />
               </div>
               <div className="pb-4">
-                <label
-                  className="block text-gray-700 text-base font-semibold pb-2"
-                >
+                <label className="block text-gray-700 text-base font-semibold pb-2">
                   Email
                 </label>
                 <input
                   className="shadow border text-base border-gray-600 w-full py-2 px-3 text-gray-700  focus:outline-none focus:shadow-outline"
-                  id="mail"
                   type="text"
+                  name="user_email"
+                  required
                   placeholder="Write your email"
                 />
               </div>
               <div className="pb-4">
-                <label
-                  className="block text-gray-700 text-base font-semibold pb-2"
-                >
+                <label className="block text-gray-700 text-base font-semibold pb-2">
                   Message
                 </label>
                 <textarea
                   className="shadow border text-base border-gray-600 w-full py-2 px-3 text-gray-700  focus:outline-none focus:shadow-outline"
                   rows={4}
-                  id="message"
                   type="text"
+                  name="message"
+                  required
                   placeholder="Leave me a message"
                 />
               </div>
-              <button className="border-strong-pink rounded-md w-24 h-12 bg-strong-pink text-white hover:bg-rose-pink">
+              <button
+                className="border-strong-pink rounded-md w-24 h-12 bg-strong-pink text-white hover:bg-rose-pink"
+                type="submit"
+              >
                 Send
               </button>
             </form>
