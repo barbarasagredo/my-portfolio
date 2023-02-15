@@ -1,0 +1,16 @@
+.backgroundImage {
+  background: url("./images/bg-pattern.jpg"),
+    linear-gradient(to right top, #c55bba, #d286e7, #c188dc, #3ac3d9);
+  background-blend-mode: lighten, difference, screen;
+}
+
+.shadowImage {
+  -webkit-box-shadow: -1px 8px 13px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 8px 13px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 8px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+.sidebar-height {
+  box-sizing: border-box;
+  min-height: calc(100vh - 7.3rem);
+}
