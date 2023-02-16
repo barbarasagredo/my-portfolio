@@ -7,11 +7,11 @@ const Home = () => {
       <div className="grid grid-cols-4 min-h-screen bg-no-repeat bg-cover backgroundImage">
         <Sidebar />
         <div className="grid col-span-2 self-center justify-center">
-          <h1>Barbara Sagredo C</h1>
+          <h1 className="truncate">Barbara Sagredo C</h1>
           <div className="flex justify-center space-x-2 items-center">
-            <h3 className="text-gray-400">analog photographer</h3>
+            <h3 className="truncate text-gray-400">analog photographer</h3>
             <h3>|</h3>
-            <h3>front end developer</h3>
+            <h3 className="truncate">front end developer</h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
