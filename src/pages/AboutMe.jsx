@@ -10,13 +10,12 @@ const AboutMe = () => {
           <Sidebar />
           <div className="grid col-span-3 self-center space-y-3">
             <p className="text-2xl font-bold text-strong-pink">
-              Hi, I'm Bárbara{" "}
+              Hi, I'm Bárbara
             </p>
             <p>
               Proudly graduated from Laboratoria, currently living in Chile.
             </p>
             <p>
-              {" "}
               I consider myself a creative and brave person. I moved to New
               Zealand this year and even though I had to come back I was able to
               prove myself ✨ I can speak english✨
@@ -33,7 +32,7 @@ const AboutMe = () => {
           </div>
           <div className="grid col-span-3 items-center justify-center">
             <img
-              src="src\images\profile-photo.png"
+              src="https://raw.githubusercontent.com/barbarasagredo/my-portfolio/main/src/images/profile-photo.png"
               alt="profile-picture"
               className="shadowImage rounded-full max-h-64"
             />
