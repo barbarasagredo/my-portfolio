@@ -1,7 +1,7 @@
 # Project portfolio
 
-My name is Bárbara, [this]() is my portfolio where you can find my contact and we will finally talk.
+My name is Bárbara, [this](https://barbarasagredo.netlify.app/) is my portfolio where you can find my work, a litle bit of myself and my contact details so... we can finally talk.
 
-Design and developed by **Barbara Sagredo Cárcamo** :gem: 
+Designed and developed by **Barbara Sagredo Cárcamo** :gem: 
 
 ---
