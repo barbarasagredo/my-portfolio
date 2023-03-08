@@ -9,7 +9,7 @@ const Projects = () => {
           <h2 className="flex justify-center pt-16">Projects</h2>
           <div className="flex">
             <Sidebar />
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-6 w-full self-center px-10 py-12">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 w-full self-center pl-16 pr-5 py-12">
               <ProjectCard
                 alt={"ToDo app cover"}
                 image={"https://raw.githubusercontent.com/barbarasagredo/my-portfolio/main/src/images/to-do-app.jpg"}

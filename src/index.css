@@ -3,6 +3,7 @@
 @tailwind utilities;
 * {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  /* height: screen; */
 }
 a {
   font-weight: 300;
@@ -17,7 +18,7 @@ a:hover {
 
 h1 {
   color: #374151;
-  font-size: 3.2em;
+  /* font-size: 3.2em; */
 }
 h2 {
   color: #374151;

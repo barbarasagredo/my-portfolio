@@ -1,7 +1,7 @@
 const Sidebar = () => {
   return (
     <>
-      <aside className="px-4 flex items-center min-w-4 sidebar-height">
+      <aside className="px-2 flex items-center min-w-4 sidebar-height fixed">
         <ul className="space-y-8">
           <li>
             <a

@@ -4,13 +4,12 @@ import Sidebar from "../components/Sidebar";
 const Home = () => {
   return (
     <>
-      <div className="grid grid-cols-4 min-h-screen bg-no-repeat bg-cover backgroundImage">
+      <div className="grid min-h-screen bg-no-repeat bg-cover backgroundImage pt-20">
         <Sidebar />
         <div className="grid col-span-2 self-center justify-center">
-          <h1 className="truncate">Barbara Sagredo C</h1>
-          <div className="flex justify-center space-x-2 items-center">
-            <h3 className="truncate text-gray-400">analog photographer</h3>
-            <h3>|</h3>
+          <h1 className="lg:text-5xl md:text-4xl sm:text-4xl xs:text-3xl">Barbara Sagredo</h1>
+          <div className="flex md:flex-row xs:flex-col justify-center space-x-2 items-center">
+            <h3 className="truncate text-gray-400">analog photographer  |</h3>
             <h3 className="truncate">front end developer</h3>
             <svg
               xmlns="http://www.w3.org/2000/svg"

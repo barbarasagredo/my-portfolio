@@ -4,11 +4,11 @@ import Sidebar from "../components/Sidebar";
 const AboutMe = () => {
   return (
     <>
-      <div className="bg-no-repeat bg-cover backgroundImage">
-        <h2 className="flex justify-center pt-16">About me</h2>
-        <div className="grid grid-cols-7">
+      <div className="grid bg-no-repeat bg-cover min-h-screen backgroundImage">
+        <h2 className="grid justify-center pt-14">About me</h2>
+        <div className="grid md:grid-cols-7 xs:grid-cols-4  pb-40">
           <Sidebar />
-          <div className="grid col-span-3 self-center space-y-3">
+          <div className="grid col-start-2 col-span-3 self-center space-y-3 pb-8">
             <p className="text-2xl font-bold text-strong-pink">
               Hi, I'm Bárbara
             </p>
@@ -30,7 +30,7 @@ const AboutMe = () => {
               potential, drink coffee and share music with my co-workers 🎧
             </p>
           </div>
-          <div className="grid col-span-3 items-center justify-center">
+          <div className="grid sm:col-start-2 xs:col-start-2 md:col-span-3 sm:col-span-2 xs:col-span-2 items-center justify-center">
             <img
               src="https://raw.githubusercontent.com/barbarasagredo/my-portfolio/main/src/images/profile-photo.png"
               alt="profile-picture"

@@ -29,12 +29,12 @@ const Contact = () => {
       <div className="bg-no-repeat min-h-screen bg-cover backgroundImage">
         <div className="grid grid-rows-2 justify-center items-center">
           <h2 className="flex justify-center pt-16">Contact</h2>
-          <p>
+          <p className="px-6">
             If you were interested in my work and want to know more about me or
             my projects, let's talk!
           </p>
         </div>
-        <div className="grid grid-cols-8 self-center">
+        <div className="md:grid grid-cols-8 xs:px-12 self-center">
           <div className="col-span-3 col-start-2 pt-6">
             <p className="text-xl font-semibold text-strong-pink pb-4">
               Contact me
