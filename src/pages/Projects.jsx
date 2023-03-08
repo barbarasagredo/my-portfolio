@@ -9,7 +9,7 @@ const Projects = () => {
           <h2 className="flex justify-center pt-16">Projects</h2>
           <div className="flex">
             <Sidebar />
-            <div className="grid grid-cols-3 gap-6 w-full self-center px-12 py-12">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-6 w-full self-center px-10 py-12">
               <ProjectCard
                 alt={"ToDo app cover"}
                 image={"https://raw.githubusercontent.com/barbarasagredo/my-portfolio/main/src/images/to-do-app.jpg"}
@@ -31,8 +31,8 @@ const Projects = () => {
                 description={
                   "Country search engine challenge for job application. This is the first preview of the project that contains the search bar, in addition to the templates that show the countries on cards. Built using the API provided by REST countries."
                 }
-                repository={"https://github.com/barbarasagredo/app-ecomsur"}
-                webpage={"https://barbarasagredo.github.io/app-ecomsur/src/"}
+                repository={"https://github.com/barbarasagredo/country_searcher"}
+                webpage={"https://country-searcher-bsagredo.netlify.app/"}
               />
               <ProjectCard
                 alt={"Everis challenge cover"}
@@ -46,7 +46,7 @@ const Projects = () => {
                 }
                 webpage={"https://matriz-conocimiento.web.app/"}
               />
-              <ProjectCard
+              {/* <ProjectCard
                 alt={"Saudade cover"}
                 image={"https://raw.githubusercontent.com/barbarasagredo/my-portfolio/main/src/images/saudade.jpg"}
                 title={"Saudade (My own social network)"}
@@ -56,7 +56,7 @@ const Projects = () => {
                 repository={
                   "https://github.com/barbarasagredo/SCL016-social-network/tree/Barbara"
                 }
-              />
+              /> */}
               <ProjectCard
                 alt={"Pokemon what cover"}
                 image={"https://raw.githubusercontent.com/barbarasagredo/my-portfolio/main/src/images/pokemon-what.jpg"}

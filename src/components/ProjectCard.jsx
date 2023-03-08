@@ -18,12 +18,14 @@ const ProjectCard = ({
           <a
             className="text-strong-pink hover:text-gray-600 hover:font-medium"
             href={repository}
+            target="_blank"
           >
             Github repository
           </a>
           <a
             className="text-strong-pink hover:text-gray-600 hover:font-medium"
             href={webpage}
+            target="_blank"
           >
             Web page
           </a>
