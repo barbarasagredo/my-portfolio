@@ -9,7 +9,7 @@ const ProjectCard = ({
   return (
     <>
       <div className="max-w-md rounded border bg-white min-h-80 border-gray-300 overflow-hidden shadow-lg">
-        <img className="w-full" src={image} alt={alt} />
+        <img className="w-full h-80 object-cover p-4 rounded" src={image} alt={alt} />
         <div className="px-6 py-4">
           <h2 className="font-bold text-strong-pink text-xl mb-2">{title}</h2>
           <p className="text-gray-700 text-base">{description}</p>
