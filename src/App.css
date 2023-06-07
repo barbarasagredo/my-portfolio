@@ -14,3 +14,9 @@
   box-sizing: border-box;
   min-height: calc(100vh - 7.3rem);
 }
+
+@media screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}

@@ -11,6 +11,20 @@ const Projects = () => {
             <Sidebar />
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 w-full self-center pl-16 pr-5 py-12">
               <ProjectCard
+                alt={"EWay homebanking cover"}
+                image={"https://raw.githubusercontent.com/barbarasagredo/my-portfolio/main/src/images/e-way-homebanking.jpg"}
+                title={"E-way homebanking"}
+                description={
+                  "Homebanking created during EY and Mindhub Bootcapm, backend developed using JAVA 11 and SpringBoot and frontend developed using Vue and Bootstrap"
+                }
+                repository={
+                  "https://github.com/barbarasagredo/e-way-homebanking"
+                }
+                webpage={
+                  "https://e-way-homebanking-production.up.railway.app/web/index.html"
+                }
+              />
+              <ProjectCard
                 alt={"ToDo app cover"}
                 image={"https://raw.githubusercontent.com/barbarasagredo/my-portfolio/main/src/images/to-do-app.jpg"}
                 title={"To do app (Front end menthor)"}
